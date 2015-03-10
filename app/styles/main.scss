@@ -1,0 +1,46 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.btn-sign-in{
+  background-color: #6fa879;
+  border: 0px;
+
+  &:hover{
+    background-color: lighten(#6fa879, 5%);
+  }
+}
+
+#main-nav{
+  background-color: transparent;
+  border: 0px;
+  color: #fff;
+
+  #main-nav-container{
+    padding-top: 15px;
+
+    a{
+      color: #fff;
+    }
+
+    .logo{
+      padding-top: 0px;
+    }
+
+    .navbar-toggle{
+      border: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+#intro{
+  background-image: url(../images/home/fondo_verde.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
