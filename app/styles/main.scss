@@ -16,6 +16,27 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+.btn-white{
+  background-color: #fff;
+  color: #58595b;
+  border-color: #58595b;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover{
+    background-color: #58595b;
+    color: #fff;
+  }
+
+  @include transition(all 0.5s ease-in);
+}
+
+.btn-white.btn-lg{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 #main-nav{
   background-color: transparent;
   border: 0px;
@@ -74,7 +95,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     }
 
     .btn-sign-in{
-      color: #fff;
+      background-color: #fff;
+      border: 1px solid #808285;
+      color: #808285;
+      font-weight: 300;
+
+      &:hover{
+        background-color: #808285 !important;
+        color: #fff;
+      }
     }
 
     .logo{
@@ -95,7 +124,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
         background-color: #fff;
       }
     }
-
   }
 }
 
@@ -163,6 +191,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   .row{
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+
+footer{
+  .container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  a{
+    color: #4f5877;
+
+    &:hover{
+      color: darken(#4f5877, 5%);
+    }
   }
 }
 
