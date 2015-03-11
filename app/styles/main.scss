@@ -28,8 +28,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     background-color: #58595b;
     color: #fff;
   }
-
-  @include transition(all 0.5s ease-in);
 }
 
 .btn-white.btn-lg{
@@ -80,6 +78,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     #navbar-collapse{
       @media only screen and (max-width: 778px){
         background-image: url(../images/home/fondo_verde.svg);
+        text-align: center;
+      }
+    }
+
+    .btn-sign-in{
+      @media only screen and (max-width: 778px){
+        margin-left: 15px;
+        margin-right: 15px;
       }
     }
   }
@@ -92,6 +98,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   #main-nav-container{
     a{
       color: #808285;
+
+      &:hover{
+        background-color: #eee;
+      }
     }
 
     .btn-sign-in{
