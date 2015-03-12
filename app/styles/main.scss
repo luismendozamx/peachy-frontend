@@ -30,7 +30,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
-.btn-white.btn-lg{
+.btn-orange{
+  background-color: #f36e54;
+  color: #fff;
+  border-color: #f36e54;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover{
+    background-color: lighten(#f36e54, 5%);
+    color: #fff;
+  }
+}
+
+.btn-white.btn-lg,
+.btn-orange.btn-lg{
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -201,6 +216,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   .row{
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+
+#faqs{
+  padding-top: 100px;
+  color: #58595b;
+
+  .questions{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p{
+      font-size: 18px;
+      font-weight: 300;
+    }
   }
 }
 
