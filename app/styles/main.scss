@@ -234,6 +234,48 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+#team{
+  padding-top: 100px;
+  color: #58595b;
+
+  p{
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .title{
+    padding-bottom: 20px;
+  }
+
+  .team-member{
+    padding-bottom: 30px;
+
+    .info{
+      color: #919396;
+
+      p{
+        font-size: 12px;
+
+        @media only screen and (max-width: 778px){
+          font-size: 14px;
+        }
+      }
+    }
+
+    .description{
+      padding-top: 30px;
+
+      @media only screen and (max-width: 778px){
+        text-align: center;
+        padding-top: 0px;
+      }
+    }
+  }
+
+  
+
+}
+
 footer{
   .container{
     padding-top: 30px;
