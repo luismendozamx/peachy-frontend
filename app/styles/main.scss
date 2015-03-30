@@ -271,9 +271,28 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       }
     }
   }
+}
 
-  
+#mision{
+  padding-top: 100px;
+  color: #58595b;
 
+  h1{
+    font-size: 50px;
+  }
+
+  .apolo11{
+
+    img{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
 }
 
 footer{
