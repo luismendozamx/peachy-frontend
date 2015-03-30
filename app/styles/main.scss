@@ -75,6 +75,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     .logo{
       padding-top: 0px;
 
+      &:hover{
+        background-color: transparent;
+      }
+
       .blanco{
         display: block;
       }
@@ -115,7 +119,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       color: #808285;
 
       &:hover{
-        background-color: #eee;
+        background-color: lighten(#eee, 5%);
       }
     }
 
@@ -133,6 +137,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
     .logo{
       padding-top: 0px;
+
+      &:hover{
+        background-color: transparent;
+      }
 
       .blanco{
         display: none;
@@ -313,17 +321,35 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+#press{
+  padding-top: 100px;
+  color: #58595b;
+
+  h1{
+    font-size: 50px;
+  }
+
+  img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 footer{
   .container{
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  a{
-    color: #4f5877;
+  .nav{
 
-    &:hover{
-      color: darken(#4f5877, 5%);
+    a{
+      color: #4f5877;
+
+      &:hover{
+        color: darken(#4f5877, 5%);
+        background-color: lighten(#eee, 5%);
+      }
     }
   }
 }
