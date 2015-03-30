@@ -335,6 +335,30 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+#contacto{
+  padding-top: 100px;
+  color: #58595b;
+
+  h1{
+    font-size: 50px;
+  }
+
+  img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  form .form-group .form-control{
+    ::-webkit-input-placeholder,
+    :-moz-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder {  
+       color: red;  
+    }
+  }
+  
+}
+
 footer{
   .container{
     padding-top: 30px;
