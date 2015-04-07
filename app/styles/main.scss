@@ -378,3 +378,71 @@ footer{
   }
 }
 
+/*
+*
+* User Subscription Flow
+*
+*/
+
+.subscribe-flow{
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  #type-selector{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    li a{
+      margin-left: 10px;
+      margin-right: 10px;
+
+      color: #58595b;
+      background-color: #d1d3d4;
+
+      &:hover{
+        background-color: lighten(#d1d3d4, 10%);
+      }
+    }
+
+    .active{
+      a{
+        background-color: lighten(#d1d3d4, 10%);
+      }
+    }
+  }
+
+  #pad-type-selector{
+    padding-top: -10px;
+    padding-bottom: 20px;
+
+    li a{
+      margin-left: 10px;
+      margin-right: 10px;
+
+      color: #58595b;
+      background-color: #d1d3d4;
+
+      &:hover{
+        background-color: lighten(#d1d3d4, 10%);
+      }
+    }
+
+    .active{
+      a{
+        background-color: lighten(#d1d3d4, 10%);
+      }
+    }
+  }
+
+  #brand{
+    .marca{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  #back-button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
