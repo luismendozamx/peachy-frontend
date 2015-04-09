@@ -10,9 +10,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   color: #fff;
   font-weight: 300;
 
-  &:hover{
-    background-color: darken(#6fa879, 5%) !important;
-    color: #fff;
+  .otra{
+    &:hover{
+      background-color: darken(#6fa879, 5%) !important;
+      color: #fff;
+    }
   }
 }
 
