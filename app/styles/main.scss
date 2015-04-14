@@ -436,10 +436,26 @@ footer{
     }
   }
 
-  #brand{
-    .marca{
-      padding-top: 10px;
-      padding-bottom: 10px;
+  .marca{
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    p{
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  }
+
+  #quantity{
+    #pad-type-selector{
+      li a{
+        color: #58595b;
+        background-color: #fff;
+
+        &:hover{
+          background-color: lighten(#d1d3d4, 10%);
+        }
+      }
     }
   }
 
