@@ -32,6 +32,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+.btn-fill{
+  width: 100%;
+}
+
 .btn-orange{
   background-color: #f36e54;
   color: #fff;
@@ -462,5 +466,65 @@ footer{
   #back-button{
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+#subscription{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  .no-padding-left{
+    padding-left: 0px;
+
+    @media only screen and (max-width: 778px){
+      padding-right: 0px;
+    }
+  }
+
+  .form-group{
+    input{
+      margin-bottom: 10px;
+    }
+  }
+
+  .order{
+    p{
+      color: lighten(#58595b, 5%);
+    }
+
+    strong{
+      color: #000;
+    }
+  }
+
+  .finish{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    p{
+      color: lighten(#58595b, 15%);
+    }
+  }
+}
+
+#sign-in{
+  padding-top: 100px;
+
+  .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sign-in-form{
+    padding-top: 30px;
+  }
+
+  input{
+    margin-bottom: 10px;
+  }
+
+  .beachbag{
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
