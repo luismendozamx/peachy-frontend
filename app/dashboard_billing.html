@@ -11,13 +11,13 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
 
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
   </head>
@@ -35,7 +35,7 @@
               <a lass="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">María José <span class="caret"></span>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">Peachy Code: <span class="peachy-code">10239</span> </a></li>
-                  <li><a href="/dashboard/account.html">My Account</a></li>
+                  <li><a href="dashboard_account.html">My Account</a></li>
                   <li><a href="#">Log Out</a></li>
                 </ul>
               </a>
@@ -47,69 +47,110 @@
       <div id="dashboard-container" class="container">
         <div class="row">
           <div id="side-bar" class="col-sm-2">
-            <img src="/images/dashboard/dashboard_circulocaja.svg" class="img-responsive center">
+            <img src="images/dashboard/dashboard_circulocaja.svg" class="img-responsive center">
 
             <ul class="nav nav-stacked">
-              <li><a href="/dashboard"><img src="/images/dashboard/dashboard_iconodashboard.svg"> Dashboard</a></li>
-              <li><a href="/dashboard/subscription.html"><img src="/images/dashboard/dashboard_cajita.svg"> Subscription</a></li>
-              <li><a href="/dashboard/billing.html"><img src="/images/dashboard/dashboard_tarjetita.svg"> Billing</a></li>
-              <li><a href="/dashboard/shipping.html"><img src="/images/dashboard/dashboard_globito.svg"> Shipping</a></li>
+              <li><a href="dashboard.html"><img src="images/dashboard/dashboard_iconodashboard.svg"> Dashboard</a></li>
+              <li><a href="dashboard_subscription.html"><img src="images/dashboard/dashboard_cajita.svg"> Subscription</a></li>
+              <li><a href="dashboard_billing.html"><img src="images/dashboard/dashboard_tarjetita.svg"> Billing</a></li>
+              <li><a href="dashboard_shipping.html"><img src="images/dashboard/dashboard_globito.svg"> Shipping</a></li>
             </ul>
           </div>
 
           <div id="main-panel" class="col-sm-10 col-sm-offset-0 col-xs-10 col-xs-offset-1">
             <div class="row title">
-              <h1 class="center">Shipping</h1>
+              <h1 class="center">Billing</h1>
             </div>
 
             <div class="row info-panel">
 
               <div class="col-sm-7">
                 <div class="col-sm-12 no-padding-left">
-                  <h3>We are shipping to</h3>
+                  <h3>Primary Card</h3>
 
-                  <div class="col-sm-12 no-padding-left">
-                    <h3>Shipping</h3>
-                    <p>1749 NE Miami Ct</p>
-                    <p>Apartment 311</p>
-                    <p>Miami <span class="info">FL</span> <span class="info">33132</span></p>
+                  <div class="row card">
+                    <p class="mute">XXXXXXXX906 <span class="info">12/09</span></p>
+                    <img src="images/dashboard/tarjetas_mastercard.svg" alt="">
                   </div>
                 </div>
 
                 <div class="col-sm-12 no-padding-left">
-                  <h3>Stored shipping adresses</h3>
+                  <h3>Backup Card</h3>
 
-                  <div class="row address">
-                    <div class="col-sm-6 no-padding-left">
-                      <p>1749 NE Miami Ct</p>
-                      <p>Apartment 311</p>
-                      <p>Miami <span class="info">FL</span> <span class="info">33132</span></p>
-                    </div>
-                    <div class="col-sm-5 no-padding-left">
-                      <button class="btn btn-green">ship here</button>
-                      <button class="btn btn-red">delete this</button>
-                    </div>
-                  </div>
-
-                  <div class="row address">
-                    <div class="col-sm-6 no-padding-left">
-                      <p>1749 NE Miami Ct</p>
-                      <p>Apartment 311</p>
-                      <p>Miami <span class="info">FL</span> <span class="info">33132</span></p>
-                    </div>
-                    <div class="col-sm-5 no-padding-left">
-                      <button class="btn btn-green">ship here</button>
-                      <button class="btn btn-red">delete this</button>
-                    </div>
+                  <div class="row card">
+                    <p class="mute">XXXXXXXX906 <span class="info">12/09</span></p>
+                    <img src="images/dashboard/tarjeta_amex.svg" alt="">
                   </div>
                 </div>
 
+                <div class="col-sm-12 no-padding-left">
+                  <h3>Stored Cards</h3>
+
+                  <div class="row card">
+                    <div class="col-sm-12 no-padding-left">
+                      <p class="mute">XXXXXXXX906 <span class="info">12/09</span></p>
+                    </div>
+                    <div class="col-sm-2 no-padding-left">
+                      <img src="images/dashboard/tarjetas_mastercard.svg" alt="">
+                    </div>
+                    <div class="col-sm-5 no-padding-left">
+                      <button class="btn btn-white">use as primary</button>
+                    </div>
+                    <div class="col-sm-5 no-padding-left">
+                      <button class="btn btn-white">use as backup</button>
+                    </div>
+                  </div>
+
+                  <div class="row card">
+                    <div class="col-sm-12 no-padding-left">
+                      <p class="mute">XXXXXXXX906 <span class="info">12/09</span></p>
+                    </div>
+                    <div class="col-sm-2 no-padding-left">
+                      <img src="images/dashboard/tarjetas_visa.svg" alt="">
+                    </div>
+                    <div class="col-sm-5 no-padding-left">
+                      <button class="btn btn-white">use as primary</button>
+                    </div>
+                    <div class="col-sm-5 no-padding-left">
+                      <button class="btn btn-white">use as backup</button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-sm-5">
 
                 <div class="row">
-                  <h3 class="center">Add a new address</h3>
+                  <h3 class="center">Add a new card</h3>
+
+                  <div class="form-group">
+                    <div class="col-sm-12 no-padding-left">
+                      <input type="text" class="form-control" placeholder="Card Number">
+                      <div class="card-icons">
+                        <img src="images/dashboard/tarjetas_visa.svg" alt="">
+                        <img src="images/dashboard/tarjeta_amex.svg" alt="">
+                        <img src="images/dashboard/tarjetas_mastercard.svg" alt="">
+                        <img src="images/dashboard/tarjeta_discover.svg" alt="">
+                        <img src="images/dashboard/tarjeta_other.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-4 no-padding-left">
+                      <input type="text" class="form-control" placeholder="mo">
+                      <p class="help-block">Expires on</p>
+                    </div>
+                    <div class="col-sm-4 no-padding-left">
+                      <input type="text" class="form-control" placeholder="yr">
+                    </div>
+                    <div class="col-sm-4 no-padding-left">
+                      <input type="text" class="form-control" placeholder="CVV">
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="row">
+                  <h3 class="center">New billing address</h3>
                   <div class="form-group">
                     <div class="col-sm-12 no-padding-left">
                       <input type="text" class="form-control" placeholder="Address 1">
@@ -181,7 +222,7 @@
 
                 <div class="row confirm">
                   <div class="col-sm-12">
-                    <p class="center"><button class="btn btn-white btn-lg">Confirm shipping address</button></p>
+                    <p class="center"><button class="btn btn-white btn-lg">Confirm new card</button></p>
                   </div>
                 </div>
 
@@ -190,7 +231,7 @@
 
             <div class="row back-button">
               <div class="col-sm-1">
-                <a href="subscribe.html"><img src="/images/subscribe/boton_back.svg" alt=""></a>
+                <a href="subscribe.html"><img src="images/subscribe/boton_back.svg" alt=""></a>
               </div>
             </div>
             
@@ -202,24 +243,24 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
-    <script src="/scripts/page.js"></script>
+    <script src="scripts/page.js"></script>
     <!-- endbuild -->
 </body>
 </html>
