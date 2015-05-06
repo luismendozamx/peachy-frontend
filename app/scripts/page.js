@@ -1,5 +1,16 @@
 $(document).ready(function(){
-  
+
+  $('.switch').click( function(){
+    console.log('Click Switch')
+    $('.boton-verde').toggle(0);
+    $('.boton-rojo').toggle(0);
+  });
+
+  $('.cancel-btn').click( function(){
+    console.log('Click Cancel')
+    $('.cancel-confirm').toggle(0);
+  });
+
 });
 
 $(window).resize(function(){

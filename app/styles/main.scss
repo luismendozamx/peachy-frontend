@@ -32,6 +32,34 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+.btn-green{
+  background-color: #fff;
+  color: #58595b;
+  border-color: #6fa879;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover{
+    background-color: #6fa879;
+    color: #fff;
+  }
+}
+
+.btn-red{
+  background-color: #fff;
+  color: #58595b;
+  border-color: #f24040;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover{
+    background-color: #f24040;
+    color: #fff;
+  }
+}
+
 .btn-fill{
   width: 100%;
 }
@@ -497,6 +525,18 @@ footer{
     }
   }
 
+  .state{
+    @media only screen and (max-width: 778px){
+      margin-bottom: 10px;
+    }
+  }
+
+  .stamp{
+    @media only screen and (max-width: 778px){
+      margin-bottom: 10px;
+    }
+  }
+
   .finish{
     padding-top: 50px;
     padding-bottom: 30px;
@@ -504,6 +544,9 @@ footer{
     p{
       color: lighten(#58595b, 15%);
     }
+  }
+  @media only screen and (max-width: 778px){
+    
   }
 }
 
@@ -543,6 +586,7 @@ footer{
 }
 
 #dashboard{
+  padding-bottom: 50px;
   color: #58595b;
 
   .navbar{
@@ -558,7 +602,8 @@ footer{
 
   .nav{
     li a{
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 300;
       color: #58595b;
     }
   }
@@ -566,6 +611,10 @@ footer{
   .dropdown-menu{
     border: 0px;
     box-shadow: none;
+
+    li a{
+      font-size: 14px;
+    }
   }
 
   #dashboard-container{
@@ -577,7 +626,6 @@ footer{
   }
 
   #side-bar{
-
 
     .nav{
       margin-top: 20px;
@@ -600,7 +648,7 @@ footer{
   }
 
   #main-panel{
-    margin-top: 50px;
+    margin-top: 40px;
 
     .title{
       padding-bottom: 20px;
@@ -635,5 +683,97 @@ footer{
         text-align: center;
       }
     }
+
+    .boton-rojo,
+    .cancel-confirm{
+      display: none
+    }
+
+    .info{
+      padding-left: 15px;
+    }
+
+    .mute{
+      color: lighten(#58595b, 35%);
+    }
+
+    .address,
+    .card{
+      height: auto;
+      padding-bottom: 20px;
+      padding-left: 15px;
+
+      .btn{
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .state{
+      @media only screen and (max-width: 778px){
+        margin-bottom: 10px;
+      }
+    }
+
+    .stamp{
+      @media only screen and (max-width: 778px){
+        margin-bottom: 10px;
+      }
+    }
+
+    .switch{
+      @media only screen and (max-width: 778px){
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .back-button{
+      padding-top: 40px;
+    }
+
+    .account-info{
+      margin-bottom: 40px;
+
+      p{
+        font-size: 22px;
+      }
+    }
+
+    .no-padding-left{
+      padding-left: 0px;
+
+      @media only screen and (max-width: 778px){
+        padding-right: 0px;
+      }
+    }
+
+    .form-group{
+      input{
+        margin-bottom: 10px;
+      }
+    }
+
+    .card-icons{
+      margin-bottom: 10px;
+    }
+
+    .confirm{
+      margin-top: 60px;
+    }
+
+    .cancel{
+      padding-top: 20px;
+
+      a{
+        color: lighten(#58595b, 15%);
+      }
+    }
+
+    @media only screen and (max-width: 778px){
+      text-align: center;
+    }
+
   }
 }
