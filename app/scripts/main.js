@@ -11,6 +11,11 @@ $(document).ready(function(){
     console.log('Click Cancel')
     $('.cancel-confirm').toggle(0);
   });
+
+  $('.remove-item').click(function(){
+    console.log(this);
+    $(this).closest('.item.row').remove();
+  });
 });
 
 $(window).resize(function(){

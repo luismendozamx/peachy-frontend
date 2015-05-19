@@ -419,8 +419,14 @@ footer{
 */
 
 .subscribe-flow{
+  color: #58595b;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  .title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   #type-selector{
     padding-top: 30px;
@@ -494,6 +500,31 @@ footer{
   #back-button{
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .item{
+    padding-bottom: 10px;
+  }
+
+  .remove-item{
+    cursor: pointer;
+  }
+
+  #total{
+    h3{
+      margin-top: 12px;
+    }
+    p{
+      margin-top: 15px;
+    }
+  }
+}
+
+.no-padding-left{
+  padding-left: 0px;
+
+  @media only screen and (max-width: 778px){
+    padding-right: 0px;
   }
 }
 
