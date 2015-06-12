@@ -12,6 +12,8 @@
     <!-- endbuild -->
 
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/owl-carousel2/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="bower_components/owl-carousel2/dist/assets/owl.theme.default.css" />
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -58,9 +60,22 @@
           <h3 class="center light hero">Chillax we've got you covered</h3>
           <h3 class="center"><a href="subscribe.html" class="center btn btn-lg btn-sign-in">Subscribe</a></h3>
         </div>
-        <div class="col-sm-12 flecha">
-          <h3 class="center sp">How it works?</h3>
-          <img src="images/home/flecha_principal.svg" alt="" class="center img-responsive">
+        <div class="col-xs-1 previous">
+          <i class="fa fa-chevron-left fa-2x" styler="color: #fff;"></i>
+        </div>
+        <div id="carousel" class="col-xs-10">
+          <div class="col-sm-12 item flecha">
+            <h3 class="center sp">How it works?</h3>
+            <img src="images/home/flecha_principal.svg" alt="" class="center img-responsive">
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 item">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kWaKslO2jWY"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-1 next">
+          <i class="fa fa-chevron-right fa-2x" styler="color: #fff;"></i>
         </div>
       </div>
     </section>
@@ -145,11 +160,32 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/owl-carousel2/dist/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      $(document).ready(function(){
+        var owl = $("#carousel");
+
+        owl.owlCarousel({
+          items: 1,
+          dots: false,
+          loop: true
+        });
+
+        $('.next').click(function() {
+          owl.trigger('next.owl.carousel');
+        });
+
+        $('.previous').click(function() {
+          owl.trigger('prev.owl.carousel');
+        });
+      });
+    </script>
 </body>
 </html>

@@ -27,7 +27,9 @@ function adjustHomeElements(){
 
   // Obtener diferencia entre elementos exitentes arriba de la flech y espacio vacío
   // Restamos 20 para mantener la flecha siempre a 20 px del borde inferior
-  var height = ($('#intro>.container').height() - $('.cta').height() - $('.flecha').height()) - 20;
+  Hheight = ($('#intro>.container').height() - $('.cta').height() - $('.flecha').height()) - 70;
+
+  var height = Hheight;
 
   // Aplicar padding-top con el valor calculado 
   $('.flecha').css("padding-top", height + 'px');

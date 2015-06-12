@@ -203,6 +203,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   width: 100vw;
   color: #fff;
 
+  #carousel{
+    padding-top: 40px;
+  }
+
   .container{
     padding-top: 120px;
     background-image: url(../images/home/home_elements.svg);
@@ -232,10 +236,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     .flecha{
       padding-top: 200px;
 
+      img{
+        width: 25px;
+      }
+
       h3{
         font-size: 30px;
       }
     }
+  }
+
+  .next,
+  .previous{
+    cursor: pointer;
+    padding-top: 120px;
   }
 }
 
