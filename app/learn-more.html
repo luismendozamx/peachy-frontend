@@ -54,9 +54,46 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="center">Introducing The Peachy App</h1>
-            <h3 class="center">We want to help you with those mad swings download our peachy app</h3>
-            <img src="images/app/moodswings_pMONSTERS.svg" class="img-responsive center">
+            <img src="images/learn-more/cajas-render.jpg" class="img-responsive center">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1><img src="images/learn-more/uno.png" style="padding-right: 20px;">Sign Up</h1>
+            <p>This isn’t one of those sign up processes that are more painful than your last breakup. Our subscription form is quick, to the point, and oh so good looking. This is where you’ll get to pick which brand of tampons you want to receive (no worries, we have your favorite ones in stock) and your flow type (heavy, medium, or light). Each box comes with a mix of 24 tampons specific to your flow selection. Changing your address, preferred brand, or flow type is super easy: just log in, update your info, and voila!</p>
+          </div>
+        </div>
+
+        <div class="row carousel">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-xs-1 previous">
+              <i class="fa fa-chevron-left fa-2x" styler="color: #000;"></i>
+            </div>
+            <div id="carousel" class="col-xs-10">
+              <div class="col-sm-12">
+              </div>
+            </div>
+            <div class="col-xs-1 next">
+              <i class="fa fa-chevron-right fa-2x" styler="color: #000;"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1><img src="images/learn-more/uno.png" style="padding-right: 20px;">Receive 'Em</h1>
+            <p>Now you can just relax (we know you’re really good at that). Your Peachy package will be at your door by the first of every month. No more emergency runs to the corner store! Hooray! Your account will be automatically charged every month as well. One more thing off your mind.</p>
+          </div>
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1><img src="images/learn-more/uno.png" style="padding-right: 20px;">Use 'Em</h1>
+            <p>Are you going to absolutely love your Peachy subscription? You can bet your favorite pair of shoes you are! Actually, we have a feeling you’ll be so in love with it, you won’t stop bragging about it to your friends (maybe you’ll even give a subscription to someone. Best. Gift. Ever.) However, if you ever want to cancel it, we make it as quick and easy as the first level of Angry Birds.</p>
+          </div>
+        </div>
+
+        <div class="row" style="padding-top: 40px;">
+          <div class="col-xs-6 col-xs-offset-3">
+            <p class="center"><a href="subscribe.html" class="btn btn-white center btn-lg">Subscribe</a></p>
           </div>
         </div>
       </div>
@@ -104,5 +141,25 @@
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/page.js"></script>
     <!-- endbuild -->
+
+    <script>
+      $(document).ready(function(){
+        var owl = $("#carousel");
+
+        owl.owlCarousel({
+          items: 1,
+          dots: false,
+          loop: true
+        });
+
+        $('.next').click(function() {
+          owl.trigger('next.owl.carousel');
+        });
+
+        $('.previous').click(function() {
+          owl.trigger('prev.owl.carousel');
+        });
+      });
+    </script>
 </body>
 </html>

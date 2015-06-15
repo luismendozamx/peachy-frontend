@@ -253,6 +253,17 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
+.carousel{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  .next,
+  .previous{
+    cursor: pointer;
+    padding-top: 60px;
+  }
+}
+
 #how-it-works{
   color: #808285;
 
@@ -405,6 +416,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     }
   }
   
+}
+
+#general-container{
+  padding-top: 100px;
+  color: #58595b;
+
+  h1{
+    font-size: 50px;
+  }
+
+  img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 footer{
